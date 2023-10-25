@@ -1,0 +1,86 @@
+.ul, .p, .f, .h {
+  margin: 0
+}
+
+.main {
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.header {
+  background: linear-gradient(to bottom right, #babeff, #ffffff, #ffcfcf);
+}
+.nav {
+  justify-content: space-between;
+}
+
+.ul {
+  justify-content: space-between;
+}
+
+.ul-header {
+  align-items: center;
+}
+
+.item {
+margin-right: 15px;
+}
+
+.h, .p {
+  margin-bottom: 10px;
+}
+
+.h, .p, .fc, .nav, .link {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #950016;
+}
+
+.article:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.logotype {
+  height: 10vh;
+}
+
+.main-title {
+  padding-top: 10px;
+}
+
+.ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.div-main {
+  margin-left: 10px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.f {
+  display: inline-block;
+}
+
+.img {
+  display: block;
+  width: 20vw;
+  box-shadow: 4px 4px 20px 2px #950016;
+  margin-bottom: 10px;
+  transition: 1s;
+}
+
+.img:hover {
+  box-shadow: none;
+  transform: scale(1.2);
+}

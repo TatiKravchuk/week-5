@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice second</title>
+    <style>
+      .flex {
+        display:flex;
+        justify-content: center;
+      }
+
+      .footer {
+        justify-content: space-around;
+      }
+
+        .main {
+          justify-content: center;
+        }
+
+      .footer {
+        padding: 2vh;
+      }
+
+      .header, .footer {
+        background-color: #e9c7ff;
+      }
+
+      .section {
+        background-color: #ffe2b9;
+        width: 70vw;
+        flex-direction: column;
+        align-items: center;
+        padding: 1vw;
+      }
+
+      .article:not(:last-child) {
+        margin-bottom: 2vw;
+      }
+
+      .div-article {
+        background-color: #ffcd87;
+display: flex;
+flex-direction: column;
+        align-items: center;
+      }
+
+      .div-article:not(:last-child) {
+margin-right: 2vw;
+      }
+
+      .div-first {
+        width: 33vw;
+      }
+
+      .div-second {
+        width: 68vw;
+      }
+
+      .aside {
+        background-color: #9dff87;
+        width: 30vw;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .div-footer {
+        background-color: #ffffff;
+        width: 23vw;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .title {
+        margin-bottom: 25vh;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header class="flex header">
+        <h1>Турагенство "Даша-путешественница"</h1>
+    </header>
+    <main class="flex main">
+      <section class="flex section">
+        <h2 class="title">Спецпредложения</h2>
+        <article class="flex article">
+          <div class="div-article div-first">
+            <h3>Отдых на Мальдивах</h3>
+            <p>От 3000 &#36;</p>
+            <button>Подробнее</button>
+          </div>
+          <div class="div-article div-first">
+            <h3>Отдых на Сейшелах</h3>
+            <p>От 4000 &#36;</p>
+            <button>Подробнее</button>
+          </div>
+        </article>
+        <article class="article">
+          <div class="div-article div-second">
+          <h3>Тур по Европе</h3>
+          <p>От 1000 &#36;</p>
+          <button>Подробнее</button>
+        </div>
+        </article>
+      </section>
+      <aside class="aside">
+        <h2>Выбрать тур</h2>
+        <form>
+          <div>
+            <label for="month">Сезон тура:</label>
+            <select id="month" name="month" required>
+              <option value="">Выберите</option>
+              <option value="winter">Зима</option>
+              <option value="spring">Весна</option>
+              <option value="summer">Лето</option>
+              <option value="autumn">Осень</option>
+            </select>
+          </div>
+          <div>
+            <label for="type">Вид курорта:</label>
+            <select id="type" name="type" required>
+              <option value="">Выберите</option>
+              <option value="beach">Пляжный отдых</option>
+              <option value="excursion">Экскурсия</option>
+              <option value="wedding">Свадебное путешествие</option>
+              <option value="shopping">Шоп-туры</option>
+              <option value="other">Другое</option>
+            </select>
+          </div>
+          <div>
+            ФИО и контакты:
+            <textarea rows="5" cols="20"></textarea>
+          </div>
+          <button>Хочу тур!</button>
+        </form>
+      </aside>
+    </main>
+    <footer class="flex footer">
+      <div class="div-footer">
+        <h3>Адрес нашего офиса</h3>
+        <p>г. Минск, ул. Васи Пупкина, д. 4</p>
+      </div>
+      <div class="div-footer">
+        <h3>Наш телефон</h3>
+        <a href="tel:+375331234567">+375 (33) 123-45-67</a>
+      </div>
+      <div class="div-footer">
+        <h3>Наш e-mail</h3>
+        <a href="mailto:dashaputeshestvennica.com">dashaputeshestvennica.com</a>
+      </div>
+      <div class="div-footer">
+        <h3>Наши соц. сети</h3>
+        <a href="#">Вайбер</a>
+        <a href="#">Вконтакте</a>
+        <a href="#">Инстаграм</a>
+        <a href="#">Ютуб</a>
+      </div>
+    </footer>
+  </body>
+</html>
